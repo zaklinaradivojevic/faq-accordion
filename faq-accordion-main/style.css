@@ -3,8 +3,10 @@ body{
   height:100vh;
   background-color:hsl(275, 100%, 97%);
 }
+header{
+width:100vw;
+}
 header img{
-  width:100vw;
   top:0;
   left:0;
  position:absolute;
