@@ -4,6 +4,7 @@ body{
   background-color:hsl(275, 100%, 97%);
 }
 header img{
+  width:100vw;
   top:0;
   left:0;
  position:absolute;
