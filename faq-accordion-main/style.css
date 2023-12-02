@@ -1,1 +1,80 @@
+body{
+  width:100vw;
+  height:100vh;
+  background-color:hsl(275, 100%, 97%);
+}
+header img{
+  top:0;
+  left:0;
+ position:absolute;
+}
+.container{
+  width:70vw;
+  height:auto;
+  background-color:hsl(0, 0%, 100%);
+  position:relative;
+  margin:0 auto;
+  margin-top:180px;
+  border-radius:15px;
+}
+.content{
+  width:90%;
+  height:auto;
+  margin:0 auto;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+.content-title{
+  margin-top:20px;
+  margin-left:20px;
+  display:flex;
+  
+}
+.content-title h1{
+  color:hsl(292, 42%, 14%);
+  font-size:44px;
+  font-family: Work Sans;
+  margin-left:10px;
+}
+.accordion {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(292, 42%, 14%);
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  border-bottom: 1px solid hsl(292, 16%, 49%);
+  border:none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+.active, .accordion:hover {
+  background-color: hsl(0, 0%, 100%) ;
+  color:hsl(292, 16%, 49%);
+  font-size:16px;
+}
 
+.accordion:after {
+ content: url('https://raw.githubusercontent.com/zaklinaradivojevic/faq-accordion/9fa7018737045044f716f77fffc9c48e95cb90cd/faq-accordion-main/assets/images/icon-plus.svg');
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: url('https://raw.githubusercontent.com/zaklinaradivojevic/faq-accordion/9fa7018737045044f716f77fffc9c48e95cb90cd/faq-accordion-main/assets/images/icon-minus.svg');
+ 
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color:hsl(292, 16%, 49%);
+}
+ .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
